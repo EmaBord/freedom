@@ -1,0 +1,30 @@
+{% extends "rest_framework/base.html" %}
+
+{% block title %}
+FreeDom Back-End
+{% endblock %}
+
+{% block branding %}
+
+    <span>
+    	<a href="" rel="nofollow" class="navbar-brand">
+    		Domótica Libre <span class="version">1.0</span>
+    	</a>
+    </span>
+    <ul class="nav navbar-nav">
+      	<li><a href="/freedom/device">Devices</a></li>
+        <li><a href="/freedom/sensor">Sensors</a></li>
+        <li><a href="/freedom/actuator">Actuators Arduino</a></li>
+        <li><a href="/freedom/controllerComplete">Controllers Complete</a></li>
+        <li><a href="/freedom/sensor_all">All Sensors Data</a></li>
+        <li><a href="/freedom/start">Start Threads</a></li>
+                      
+    </ul>
+{% endblock %}
+{% block bootstrap_theme %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css" type="text/css">
+{% endblock %}
+{% block bootstrap_navbar_variant%}
+navbar navbar-default navbar-fixed-top 
+{% endblock%}
+
